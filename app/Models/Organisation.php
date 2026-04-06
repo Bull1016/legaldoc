@@ -6,7 +6,6 @@ use App\Models\User;
 use App\Models\Member;
 use App\Models\Social;
 use App\Models\Country;
-use App\Models\Activity;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Str;
@@ -76,10 +75,5 @@ class Organisation extends Model
   public function members()
   {
     return $this->hasMany(Member::class);
-  }
-
-  public function activity()
-  {
-    return $this->hasMany(Activity::class);
   }
 }

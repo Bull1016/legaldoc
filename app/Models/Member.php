@@ -4,7 +4,6 @@ namespace App\Models;
 
 use App\Models\User;
 use App\Models\Town;
-use App\Models\Activity;
 use App\Models\Organisation;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -58,11 +57,6 @@ class Member extends Model
     public function towns()
     {
         return $this->hasMany(Town::class);
-    }
-
-    public function activities()
-    {
-        return $this->hasMany(Activity::class);
     }
 
     public function getFullNameAttribute()

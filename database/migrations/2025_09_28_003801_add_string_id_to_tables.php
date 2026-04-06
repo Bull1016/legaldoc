@@ -13,9 +13,6 @@ class AddStringIdToTables extends Migration
      */
     public function up()
     {
-        Schema::table('activities', function (Blueprint $table) {
-            $table->string('string_id')->after('id');
-        });
         Schema::table('agendas', function (Blueprint $table) {
             $table->string('string_id')->after('id');
         });
@@ -67,9 +64,6 @@ class AddStringIdToTables extends Migration
      */
     public function down()
     {
-        Schema::table('activities', function (Blueprint $table) {
-            $table->dropColumn('string_id');
-        });
         Schema::table('agendas', function (Blueprint $table) {
             $table->dropColumn('string_id');
         });
