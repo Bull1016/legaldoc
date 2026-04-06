@@ -52,10 +52,6 @@ class UpdateTableEraseSoftDelete extends Migration
         Schema::table('flash_infos', function (Blueprint $table) {
             $table->dropColumn('deleted_at');
         });
-
-        Schema::table('agendas', function (Blueprint $table) {
-            $table->dropColumn('deleted_at');
-        });
     }
 
     /**
