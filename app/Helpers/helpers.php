@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\Exercice;
 use App\Models\ExerciceTeam;
 use App\Models\Member;
 use App\Models\Organisation;

@@ -22,7 +22,6 @@ class Post extends Model
         'photoPos',
         'slug',
         'resume',
-        'exercice_id'
     ];
 
     protected static function booted()

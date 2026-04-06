@@ -21,7 +21,6 @@ class Project extends Model
         'name',
         'file',
         'categorie_id',
-        'exercice_id',
         'private'
     ];
 

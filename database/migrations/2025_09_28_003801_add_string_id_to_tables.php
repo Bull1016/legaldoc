@@ -25,9 +25,6 @@ class AddStringIdToTables extends Migration
         Schema::table('countries', function (Blueprint $table) {
             $table->string('string_id')->after('id');
         });
-        Schema::table('exercices', function (Blueprint $table) {
-            $table->string('string_id')->after('id');
-        });
         Schema::table('flash_infos', function (Blueprint $table) {
             $table->string('string_id')->after('id');
         });
@@ -74,9 +71,6 @@ class AddStringIdToTables extends Migration
             $table->dropColumn('string_id');
         });
         Schema::table('countries', function (Blueprint $table) {
-            $table->dropColumn('string_id');
-        });
-        Schema::table('exercices', function (Blueprint $table) {
             $table->dropColumn('string_id');
         });
         Schema::table('flash_infos', function (Blueprint $table) {
