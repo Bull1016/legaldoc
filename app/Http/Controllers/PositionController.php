@@ -56,14 +56,14 @@ class PositionController extends Controller
                 </button>';
         }
 
-        if ($user->can('positions.destroy')) {
-          $buttons .= '
-                <button type="button" class="dropdown-item btn-delete"
-                        data-url="' . $deleteUrl . '"
-                        data-id="' . $row->string_id . '">
-                    <i class="icon-base ti tabler-trash me-1"></i>' . __('Delete Position') . '
-                </button>';
-        }
+        // if ($user->can('positions.destroy')) {
+        //   $buttons .= '
+        //         <button type="button" class="dropdown-item btn-delete"
+        //                 data-url="' . $deleteUrl . '"
+        //                 data-id="' . $row->string_id . '">
+        //             <i class="icon-base ti tabler-trash me-1"></i>' . __('Delete Position') . '
+        //         </button>';
+        // }
 
         $buttons .= '
             </div>

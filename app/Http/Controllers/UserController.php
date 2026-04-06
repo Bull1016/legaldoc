@@ -63,14 +63,15 @@ class UserController extends Controller
                 </button>';
         }
 
-        if ($user->can('users.destroy')) {
-          $buttons .= '
-                <button type="button" class="dropdown-item btn-delete"
-                        data-url="' . $deleteUrl . '"
-                        data-id="' . $row->string_id . '">
-                    <i class="icon-base ti tabler-trash me-1"></i>' . __('Delete User') . '
-                </button>';
-        }
+        // TODO: Replace by active / inactive users button
+        // if ($user->can('users.destroy')) {
+        //   $buttons .= '
+        //         <button type="button" class="dropdown-item btn-delete"
+        //                 data-url="' . $deleteUrl . '"
+        //                 data-id="' . $row->string_id . '">
+        //             <i class="icon-base ti tabler-trash me-1"></i>' . __('Delete User') . '
+        //         </button>';
+        // }
 
         $buttons .= '
             </div>
