@@ -35,7 +35,7 @@
     <div class="card">
         <div class="card-header">
             <div class="d-flex flex-wrap align-items-center justify-content-between">
-                <h3 class="fs-22 font-weight-semi-bold">{{ __('Organisations') }}</h3>
+                <h3 class="fs-22 font-weight-semi-bold">{{ __('Organisation') }}</h3>
                 @can('organisations.create')
                     <a href="{{ route('organisations.create') }}" class="btn btn-primary" id="add-btn">
                         @include('components.add-btn')

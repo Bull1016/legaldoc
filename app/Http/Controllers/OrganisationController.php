@@ -84,14 +84,14 @@ class OrganisationController extends Controller
                 </a>';
         }
 
-        if ($user->can('organisations.destroy')) {
-          $buttons .= '
-                <button type="button" class="dropdown-item btn-delete"
-                        data-url="' . $deleteUrl . '"
-                        data-id="' . $row->string_id . '">
-                    <i class="icon-base ti tabler-trash me-1"></i> ' . __('Delete') . '
-                </button>';
-        }
+        // if ($user->can('organisations.destroy')) {
+        //   $buttons .= '
+        //         <button type="button" class="dropdown-item btn-delete"
+        //                 data-url="' . $deleteUrl . '"
+        //                 data-id="' . $row->string_id . '">
+        //             <i class="icon-base ti tabler-trash me-1"></i> ' . __('Delete') . '
+        //         </button>';
+        // }
 
         $buttons .= '
             </div>

@@ -28,6 +28,14 @@ if (!function_exists('create_update_permissions')) {
       'guard_name' => 'web',
     ]);
 
+    $juristeRole = Role::updateOrCreate([
+      'name' => 'juriste'
+    ], [
+      'name' => 'juriste',
+      'string_id' => Str::uuid(),
+      'guard_name' => 'web',
+    ]);
+
     $permissions = [
       ['name' => 'dashboard'],
 
@@ -75,6 +83,10 @@ if (!function_exists('create_update_permissions')) {
     $superadminRole->syncPermissions(Permission::all());
 
     $memberRole->givePermissionTo([
+      Permission::where('name', 'dashboard')->first(),
+    ]);
+
+    $juristeRole->givePermissionTo([
       Permission::where('name', 'dashboard')->first(),
     ]);
   }
