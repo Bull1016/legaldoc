@@ -106,6 +106,21 @@
   });
 
   // ==========================
+  // Si #numberOr change et que la valeur de #whatsapp est nulle,
+  // on met la valeur de #numberOr dans #whatsapp ;
+  // Si #numberOr change et que la valeur de #whatsapp est egale a l'ancien #numberOr,
+  // on met la nouvelle valeur de #numberOr dans #whatsapp ;
+  // ==========================
+  let oldNumberOr = $('#numberOr').val();
+  $('#numberOr').on('input', function () {
+    if ($('#whatsapp').val() === '' || $('#whatsapp').val() === oldNumberOr) {
+      $('#whatsapp').val($(this).val());
+    }
+    oldNumberOr = $(this).val();
+  });
+
+
+  // ==========================
   // 🖼️ Aperçu de l'image
   // ==========================
   $('#picOr').on('change', function (e) {
