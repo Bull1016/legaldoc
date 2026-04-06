@@ -50,11 +50,11 @@ if (!function_exists('create_update_permissions')) {
       ['name' => 'members.edit'],
       ['name' => 'members.destroy'],
 
-      // DOCUMENTS
-      ['name' => 'documents.index'],
-      ['name' => 'documents.create'],
-      ['name' => 'documents.edit'],
-      ['name' => 'documents.destroy'],
+      // SERVICES
+      ['name' => 'services.index'],
+      ['name' => 'services.create'],
+      ['name' => 'services.edit'],
+      ['name' => 'services.destroy'],
 
       // MY REQUESTS
       ['name' => 'my-requests.index'],

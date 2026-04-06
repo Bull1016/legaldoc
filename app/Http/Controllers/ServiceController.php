@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\PartnerStoreRequest;
-use App\Http\Requests\PartnerUpdateRequest;
-use App\Models\Partner;
+use App\Http\Requests\ServiceStoreRequest;
+use App\Http\Requests\ServiceUpdateRequest;
+use App\Models\Service;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Validation\ValidationException;
 use Yajra\DataTables\DataTables;
 
 class ServiceController extends Controller
@@ -20,30 +18,17 @@ class ServiceController extends Controller
 
   public function getData(Request $request)
   {
-    $this->authorize('partners.index');
-    $query = Partner::select(['id', 'string_id', 'name', 'pic', 'location', 'created_at']);
+    $this->authorize('services.index');
+    $query = Service::select(['id', 'string_id', 'name', 'duration', 'created_at']);
 
     return DataTables::of($query)
-      ->addColumn('pic_location', function ($row) {
-        $imagePath = $row->pic && file_exists(storage_path('app/public/' . $row->pic))
-          ? asset('storage/' . $row->pic)
-          : asset('assets/img/branding/default-partner.webp'); // image par défaut
-
-        return '
-              <div class="justify-content-center">
-                  <img alt="' . e($row->name) . '" src="' . $imagePath . '" width="50" class="mb-1">
-                  <br>
-                  <small class="text-muted">' . e($row->location) . '</small>
-              </div>
-          ';
-      })
       ->addColumn('created_at', function ($row) {
         return formatDate($row->created_at);
       })
       ->addColumn('actions', function ($row) {
         $user = auth()->user();
-        $editUrl = route('partners.update', $row->string_id);
-        $deleteUrl = route('partners.destroy', $row->string_id);
+        $editUrl = route('services.update', $row->string_id);
+        $deleteUrl = route('services.destroy', $row->string_id);
 
         $buttons = '
         <div class="d-inline-block text-nowrap">
@@ -52,25 +37,21 @@ class ServiceController extends Controller
             </button>
             <div class="dropdown-menu dropdown-menu-end m-0">';
 
-        if ($user->can('partners.edit')) {
+        if ($user->can('services.edit')) {
           $buttons .= '
-                <button type="button" class="dropdown-item edit-btn"
-                        data-url="' . $editUrl . '"
-                        data-id="' . $row->string_id . '"
-                        data-location="' . $row->location . '"
-                        data-name="' . $row->name . '">
-                    <i class="icon-base ti tabler-pencil me-1"></i>' . __('Edit Partner') . '
-                </button>';
+                <a class="dropdown-item" href="' . $editUrl . '">
+                    <i class="icon-base ti tabler-pencil me-1"></i> ' . __('Edit') . '
+                </a>';
         }
 
-        if ($user->can('partners.destroy')) {
-          $buttons .= '
-                <button type="button" class="dropdown-item btn-delete"
-                        data-url="' . $deleteUrl . '"
-                        data-id="' . $row->string_id . '">
-                    <i class="icon-base ti tabler-trash me-1"></i>' . __('Delete Partner') . '
-                </button>';
-        }
+        // if ($user->can('partners.destroy')) {
+        //   $buttons .= '
+        //         <button type="button" class="dropdown-item btn-delete"
+        //                 data-url="' . $deleteUrl . '"
+        //                 data-id="' . $row->string_id . '">
+        //             <i class="icon-base ti tabler-trash me-1"></i>' . __('Delete Partner') . '
+        //         </button>';
+        // }
 
         $buttons .= '
             </div>
@@ -80,7 +61,7 @@ class ServiceController extends Controller
       })
 
       ->addIndexColumn()
-      ->rawColumns(['pic_location', 'actions'])
+      ->rawColumns(['actions'])
       ->make(true);
   }
 

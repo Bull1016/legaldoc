@@ -132,7 +132,7 @@
                                 <span class="dropdown-shortcuts-icon rounded-circle mb-3">
                                     <i class="icon-base ti tabler-file-text icon-26px text-heading"></i>
                                 </span>
-                                <a href="{{ route('documents.index') }}" class="stretched-link">@lang('Documents')</a>
+                                <a href="{{ route('services.index') }}" class="stretched-link">@lang('Services')</a>
                             </div>
                             <div class="dropdown-shortcuts-item col">
                                 <span class="dropdown-shortcuts-icon rounded-circle mb-3">
