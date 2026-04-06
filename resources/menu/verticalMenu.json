@@ -1,0 +1,77 @@
+{
+  "menu": [
+    {
+      "url": "dashboard",
+      "name": "Dashboard",
+      "icon": "menu-icon icon-base ti tabler-layout-sidebar",
+      "slug": "dashboard",
+      "can": "dashboard"
+    },
+
+    {
+      "menuHeader": "Internal Management"
+    },
+    {
+      "url": "organisations",
+      "name": "Organisations",
+      "icon": "menu-icon icon-base ti tabler-buildings",
+      "slug": "organisations.index",
+      "can": "organisations.index"
+    },
+    {
+      "url": "members",
+      "name": "Members",
+      "icon": "menu-icon icon-base ti tabler-users-group",
+      "slug": "members.index",
+      "can": "members.index"
+    },
+    {
+      "url": "documents",
+      "name": "Documents",
+      "icon": "menu-icon icon-base ti tabler-file",
+      "slug": "documents.index",
+      "can": "documents.index"
+    },
+    {
+      "url": "my-requests",
+      "name": "My Requests",
+      "icon": "menu-icon icon-base ti tabler-file-text",
+      "slug": "my-requests.index",
+      "can": "my-requests.index"
+    },
+    {
+      "menuHeader": "External Management"
+    },
+    {
+      "url": "areas-region",
+      "name": "Areas & Region",
+      "icon": "menu-icon icon-base ti tabler-globe",
+      "slug": "areas-region.index",
+      "can": "areas-region.index"
+    },
+    {
+      "url": "partners",
+      "name": "Partners",
+      "icon": "menu-icon icon-base ti tabler-cap-straight",
+      "slug": "partners.index",
+      "can": "partners.index"
+    },
+    {
+      "menuHeader": "Users"
+    },
+    {
+      "url": "users",
+      "name": "Users",
+      "icon": "menu-icon icon-base ti tabler-users",
+      "slug": "users.index",
+      "can": "users.index"
+    },
+    {
+      "url": "positions",
+      "name": "Positions",
+      "icon": "menu-icon icon-base ti tabler-brand-android",
+      "slug": "positions.index",
+      "can": "positions.index"
+    }
+  ]
+}

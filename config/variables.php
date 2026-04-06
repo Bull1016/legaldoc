@@ -1,0 +1,32 @@
+<?php
+// Variables
+return [
+  "creatorName" => "Bull",
+  "creatorUrl" => "https://www.linkedin.com/in/auguste-akpamoli-0251b51ab/",
+  "templateName" => env('APP_NAME', 'LegalDoc'),
+  "templateSuffix" => "",
+  "templateVersion" => "3.0.0",
+  "templateFree" => false,
+  "templateDescription" => "Plateforme de gestion de documents juridiques : " . env('APP_NAME', 'LegalDoc'),
+  "templateKeyword" => "LegalDoc, LegalDoc local, LegalDoc local admin, LegalDoc local dashboard, LegalDoc cotonou",
+  // "licenseUrl" => "https://themeforest.net/licenses/standard",
+  // "livePreview" => "https://demos.pixinvent.com/vuexy-html-laravel-admin-template/demo-1/",
+  // "productPage" => "https://themeforest.net/item/vuexy-vuejs-html-laravel-admin-dashboard-template/23328599",
+  // "support" => "https://pixinvent.ticksy.com/",
+  // "moreThemes" => "https://themeforest.net/user/pixinvent/portfolio",
+  "ogTitle" => env('APP_NAME', 'LegalDoc'),
+  "ogImage" => 'assets/img/favicon/favicon.ico',
+  // "ogType" => "product",
+  // "documentation" => "https://demos.pixinvent.com/vuexy-html-admin-template/documentation",
+  "generator" => "",
+  // "changelog" => "https://demos.pixinvent.com/vuexy/changelog.html",
+  // "repository" => "https://github.com/pixinvent/vuexy-html-laravel-admin-template",
+  // "gitRepo" => "vuexy-html-laravel-admin-template",
+  // "gitRepoAccess" => "https://tools.pixinvent.com/github/github-access",
+  // "githubFreeUrl" => "https://github.com/pixinvent",
+  // "facebookUrl" => "https://www.facebook.com/pixinvents/",
+  // "twitterUrl" => "https://x.com/pixinvents",
+  // "githubUrl" => "https://github.com/pixinvent",
+  // "dribbbleUrl" => "https://dribbble.com/pixinvent",
+  // "instagramUrl" => "https://www.instagram.com/pixinvents/"
+];

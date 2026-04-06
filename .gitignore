@@ -1,38 +1,47 @@
-# dependencies
+/.phpunit.cache
 /node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
 
-# testing
-/coverage
+# .env
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
 
-# next.js
-/.next/
-/out/
+docker-compose.override.yml
 
-# production
-/build
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/auth.json
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
 
-# misc
-.DS_Store
-*.pem
+!/public/assets
+!/public/assets/*
+/resources/assets/vendor/fonts/flags/**
+/resources/assets/vendor/fonts/fontawesome/**
+/public/css
+/public/js
+/public/mix-manifest.json
+# /public/assets/*
+# But not these files...
+# !/public/assets/json
+# /public/assets/json/*
+# !/public/assets/json/search-vertical.json
+# !/public/assets/json/search-horizontal.json
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+/resources/assets/vendor/fonts/flags/**
+/resources/assets/vendor/fonts/fontawesome/**
 
-# local env files
-.env
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
-# prisma
-prisma/migrations/**/migration_lock.toml
+# Except for 'template-customizer.js' inside 'resources/assets/vendor/js/'
+!/resources/assets/vendor/js/template-customizer.js

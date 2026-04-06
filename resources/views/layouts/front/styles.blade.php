@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="{{ asset('front/assets/css/plugins/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('front/assets/css/plugins/fontawesome.css') }}">
+<link rel="stylesheet" href="{{ asset('front/assets/css/plugins/sidebar.css') }}">
+<link rel="stylesheet" href="{{ asset('front/assets/css/plugins/aos.css') }}">
+<link rel="stylesheet" href="{{ asset('front/assets/css/plugins/mobile.css') }}">
+<link rel="stylesheet" href="{{ asset('front/assets/css/plugins/nice-select.css') }}">
+<link rel="stylesheet" href="{{ asset('front/assets/css/plugins/owl.carousel.min.css') }}">
+<link rel="stylesheet" href="{{ asset('front/assets/css/plugins/modal-video.min.css') }}">
+<link rel="stylesheet" href="{{ asset('front/assets/css/plugins/slick-slider.css') }}">
+<link rel="stylesheet" href="{{ asset('front/assets/css/typography.css') }}">
+<link rel="stylesheet" href="{{ asset('front/assets/scss/master.css') }}">
