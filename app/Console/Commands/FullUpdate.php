@@ -53,10 +53,11 @@ class FullUpdate extends Command
       $this->line('Seeding database (force)...');
       Artisan::call('db:seed', ['--class' => 'CatalogueUpdate', '--force' => true]);
 
+      DB::commit();
+
       $this->line('Clearing application cache...');
       Artisan::call('optimize:clear');
 
-      DB::commit();
       $this->info('***** Full Update completed. *****');
     } catch (\Throwable $th) {
       DB::rollBack();
