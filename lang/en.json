@@ -224,5 +224,6 @@
   "Team member updated successfully": "Team member updated successfully",
   "Team member updated failed": "Team member updated failed",
   "Team member deleted successfully": "Team member deleted successfully",
-  "Team member deleted failed": "Team member deleted failed"
+  "Team member deleted failed": "Team member deleted failed",
+  "Services" : "Services"
 }

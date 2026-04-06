@@ -230,5 +230,6 @@
   "Team member updated successfully": "Membre de l'equipe mis à jour avec succes",
   "Team member updated failed": "Echec de la mise à jour du membre de l'equipe",
   "Team member deleted successfully": "Membre de l'equipe supprimé avec succes",
-  "Team member deleted failed": "Echec de la suppression du membre de l'equipe"
+  "Team member deleted failed": "Echec de la suppression du membre de l'equipe",
+  "Services" : "Services"
 }

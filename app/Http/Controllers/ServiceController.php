@@ -10,12 +10,12 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\ValidationException;
 use Yajra\DataTables\DataTables;
 
-class DocumentController extends Controller
+class ServiceController extends Controller
 {
   public function index(Request $request)
   {
-    $this->authorize("documents.index");
-    return view('content.documents.index');
+    $this->authorize("services.index");
+    return view('content.services.index');
   }
 
   public function getData(Request $request)

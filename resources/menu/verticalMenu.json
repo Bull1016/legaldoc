@@ -26,8 +26,8 @@
       "can": "members.index"
     },
     {
-      "url": "documents",
-      "name": "Documents",
+      "url": "services",
+      "name": "Services",
       "icon": "menu-icon icon-base ti tabler-file",
       "slug": "documents.index",
       "can": "documents.index"
@@ -38,23 +38,6 @@
       "icon": "menu-icon icon-base ti tabler-file-text",
       "slug": "my-requests.index",
       "can": "my-requests.index"
-    },
-    {
-      "menuHeader": "External Management"
-    },
-    {
-      "url": "areas-region",
-      "name": "Areas & Region",
-      "icon": "menu-icon icon-base ti tabler-globe",
-      "slug": "areas-region.index",
-      "can": "areas-region.index"
-    },
-    {
-      "url": "partners",
-      "name": "Partners",
-      "icon": "menu-icon icon-base ti tabler-cap-straight",
-      "slug": "partners.index",
-      "can": "partners.index"
     },
     {
       "menuHeader": "Users"

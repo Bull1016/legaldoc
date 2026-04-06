@@ -31,7 +31,7 @@ Route::middleware('auth')->group(function () {
 
   require __DIR__ . '/menus/organisation.php';
   require __DIR__ . '/menus/members.php';
-  require __DIR__ . '/menus/documents.php';
+  require __DIR__ . '/menus/services.php';
   require __DIR__ . '/menus/my-requests.php';
   require __DIR__ . '/menus/country.php';
   require __DIR__ . '/menus/town.php';
